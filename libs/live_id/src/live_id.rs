@@ -105,6 +105,11 @@ impl LiveIdInterner {
     }
 }
 
+/// A unique identifier for live objects.
+///
+/// `LiveId` is a 64-bit identifier that can be used to uniquely identify live
+/// objects within the Makepad framework. It provides methods for creating,
+/// manipulating, and comparing identifiers.
 #[derive(Clone, Default, Eq, Hash, Copy, Ord, PartialOrd, PartialEq)]
 pub struct LiveId(pub u64);
 
